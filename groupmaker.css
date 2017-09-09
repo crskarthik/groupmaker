@@ -31,5 +31,10 @@ body {
   display: none;
 }
 
+#result{
+  height: 225px;
+  overflow-y: scroll;
+}
+
 
 

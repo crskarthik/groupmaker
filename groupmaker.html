@@ -31,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="#">Groupmaker</a>
+        <a class="navbar-brand" href="#">Karthik's GroupMaker</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse"> </div>
     </div>
@@ -40,7 +40,7 @@
   <div class="container-fluid" id="maincontent">
     <!-- row of columns; could add more-->
     <div class="row ">
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-6 well">
         <!-- .col-*-* should always add up to 12 for each row.-->
         <h2>Order students randomly so they can be subdivided into groups</h2> <br> <br>
         <!-- returning false keeps it from refreshing and losing the results-->
@@ -49,18 +49,28 @@
           <input type="number" name="numstudents" min="1" max="300" value="30">
           <br>
           <br>
-          <input type="submit" class="btn btn-primary btn-block" onclick="calculate()" value="Generate">
+          <input type="submit" class="btn btn-success btn-block" onclick="calculate()" value="Generate">
         </form> <br>
         <!-- http://v4-alpha.getbootstrap.com/components/buttons/ -->
         <!-- get ideas from http://www.javascript-coder.com/javascript-form/javascript-calculator-script.phtml-->
       </div>
       <!--end column 1-->
       <div class="col-sm-12 col-md-6">
-        <div id="results"></div>
+    
+          <h3>The result goes here</h3>
+          <div id="result"></div>
+        
+       
       </div>
       <!--end column 2-->
     </div>
     <!--end row-->
+    <div class="row">
+        <div class="jumbotron">
+          <center><h3>Please find this code on <a href="https://github.com/crskarthik/groupmaker" target="_blank" style="color:red"> 
+              <i class="fa fa-github" aria-hidden="true"></i></a>.All the very best <i class="fa fa-thumbs-o-up" aria-hidden="true"></i></h3></center>
+        </div>
+    </div>
   </div>
   <!--end container-->
   <footer class="footer">
@@ -73,6 +83,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="http://code.interactjs.io/v1.2.6/interact.min.js"></script>
+  <script src="https://use.fontawesome.com/04e043df8c.js"></script>
   <script src="groupmaker.js"></script>
 </body>
 
