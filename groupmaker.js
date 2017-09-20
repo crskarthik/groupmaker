@@ -17,15 +17,15 @@ function makeUniqueRandom() {
 
 function calculate() {
     numRandoms = document.getElementById("mainform").elements.namedItem("numstudents").value;
-    $("#result").empty();
-     $("#result").show(); 
-        var temp = '<table class="table table-striped"><tr><th>Random Numbers</th></tr>';
+    $("#MyResult").empty();
+     $("#MyResult").show(); 
+        var temp = '<table class="table table-striped table-bordered"><tr><th>Random Group Numbers</th></tr>';
       for (var i = 0; i < numRandoms; i++) {
         var rand = makeUniqueRandom();
-       // $("#result").append("<tr><td>"+rand + "</td></tr>");
+       // $("#MyResult").append("<tr><td>"+rand + "</td></tr>");
        temp += "<tr><td>"+rand +"</td></tr>";
    
     }
     temp += '</table>';
-    document.getElementById("result").innerHTML= temp;
+    document.getElementById("MyResult").innerHTML= temp;
 }

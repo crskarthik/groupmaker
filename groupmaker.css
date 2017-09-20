@@ -31,7 +31,7 @@ body {
   display: none;
 }
 
-#result{
+#MyResult{
   height: 225px;
   overflow-y: scroll;
 }
